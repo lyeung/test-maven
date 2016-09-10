@@ -4,7 +4,7 @@
 
     <groupId>com.github.lyeung</groupId>
     <artifactId>test-maven</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>latest-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -82,10 +82,10 @@
                 <artifactId>jgitflow-maven-plugin</artifactId>
                 <version>1.0-m5.1</version>
                 <configuration>
-                    <pushReleases>true</pushReleases>
-                    <pushFeatures>true</pushFeatures>
-                    <pullDevelop>true</pullDevelop>
-                    <pushHotfixes>true</pushHotfixes>
+                    <!--<pushReleases>true</pushReleases>-->
+                    <!--<pushFeatures>true</pushFeatures>-->
+                    <!--<pullDevelop>true</pullDevelop>-->
+                    <!--<pushHotfixes>true</pushHotfixes>-->
                     <pullMaster>true</pullMaster>
                     <keepBranch>true</keepBranch>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
