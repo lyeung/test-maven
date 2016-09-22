@@ -4,7 +4,7 @@
 
     <groupId>com.github.lyeung</groupId>
     <artifactId>test-maven</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -78,28 +78,37 @@
             </plugin>
 
             <plugin>
-                <groupId>external.atlassian.jgitflow</groupId>
-                <artifactId>jgitflow-maven-plugin</artifactId>
-                <version>1.0-m5.1</version>
+                <groupId>com.amashchenko.maven.plugin</groupId>
+                <artifactId>gitflow-maven-plugin</artifactId>
+                <version>1.2.3</version>
                 <configuration>
-                    <!--<pushReleases>true</pushReleases>-->
-                    <!--<pushFeatures>true</pushFeatures>-->
-                    <!--<pullDevelop>true</pullDevelop>-->
-                    <!--<pushHotfixes>true</pushHotfixes>-->
-                    <pullMaster>true</pullMaster>
-                    <keepBranch>true</keepBranch>
-                    <autoVersionSubmodules>true</autoVersionSubmodules>
-                    <noTag>false</noTag>
-                    <allowUntracked>true</allowUntracked>
-                    <pullDevelop>true</pullDevelop>
-                    <pullMaster>true</pullMaster>
-                    <allowSnapshots>true</allowSnapshots>
-                    <flowInitContext>
-                        <masterBranchName>master</masterBranchName>
-                        <developBranchName>develop</developBranchName>
-                    </flowInitContext>
+                    <!-- optional configuration -->
                 </configuration>
             </plugin>
+
+            <!--<plugin>-->
+                <!--<groupId>external.atlassian.jgitflow</groupId>-->
+                <!--<artifactId>jgitflow-maven-plugin</artifactId>-->
+                <!--<version>1.0-m5.1</version>-->
+                <!--<configuration>-->
+                    <!--&lt;!&ndash;<pushReleases>true</pushReleases>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<pushFeatures>true</pushFeatures>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<pullDevelop>true</pullDevelop>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<pushHotfixes>true</pushHotfixes>&ndash;&gt;-->
+                    <!--<pullMaster>true</pullMaster>-->
+                    <!--<keepBranch>true</keepBranch>-->
+                    <!--<autoVersionSubmodules>true</autoVersionSubmodules>-->
+                    <!--<noTag>false</noTag>-->
+                    <!--<allowUntracked>true</allowUntracked>-->
+                    <!--<pullDevelop>true</pullDevelop>-->
+                    <!--<pullMaster>true</pullMaster>-->
+                    <!--<allowSnapshots>true</allowSnapshots>-->
+                    <!--<flowInitContext>-->
+                        <!--<masterBranchName>master</masterBranchName>-->
+                        <!--<developBranchName>develop</developBranchName>-->
+                    <!--</flowInitContext>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 </project>
